@@ -1,18 +1,12 @@
-# Program Estimasi Biaya Bahan Bangunan
-
-# Input data pengguna
-nama = input("Masukkan nama pelanggan: ")
+nama = input("Masukkan nama kamu: ")
 jumlah_bata = int(input("Masukkan jumlah batu bata: "))
 jumlah_semen = int(input("Masukkan jumlah karung semen: "))
 
-# Harga dasar
 harga_bata = 100
 harga_semen = 100000
 
-# Hitung total awal
 total_awal = (jumlah_bata * harga_bata) + (jumlah_semen * harga_semen)
 
-# Tentukan diskon
 diskon_persen = 0
 keterangan_diskon = "Tidak Ada Diskon"
 
@@ -23,15 +17,13 @@ elif jumlah_bata >= 500 and jumlah_semen >= 5:
     diskon_persen = 15
     keterangan_diskon = "Paket Hemat (15%)"
 
-# Hitung diskon
 jumlah_diskon = total_awal * (diskon_persen / 100)
 total_akhir = total_awal - jumlah_diskon
 
-# Output
 print("="*50)
 print("        ESTIMASI BIAYA BAHAN BANGUNAN")
 print("="*50)
-print(f"Nama Pelanggan : {nama}")
+print(f"Nama kamu : {nama}")
 print("-"*50)
 print(f"| {'Barang':10} | {'Jumlah':6} | {'Harga Satuan':12} |")
 print("-"*50)
