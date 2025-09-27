@@ -1,7 +1,7 @@
 print("=== Penghitung Gaji Karyawan PT. BOM ===")
 
 nama = input("Masukkan Nama Karyawan: ")
-jabatan = input("Masukkan Jabatan Karyawan (peracik/pengantar): ").lower()
+jabatan = input("Masukkan Jabatan Karyawan (peracik petasan/pengantar petasan): ").lower()
 hari_kerja = int(input("Masukkan Jumlah Hari Kerja: "))
 jam_kerja = int(input("Masukkan Jam Kerja per Hari: "))
 lembur = int(input("Masukkan Jumlah Lembur: "))
@@ -34,7 +34,7 @@ elif jabatan == "pengantar petasan":
         bayaran_perjam = 15000
         bayaran_lembur = 12000
 else:
-    print("Jabatan tidak dikenali!")
+    print("Jabatan tidak diketahui!")
 
 gaji_pokok = ((bayaran_perjam * jam_kerja) * hari_kerja) + (lembur * bayaran_lembur)
 
